@@ -8,7 +8,7 @@ import { PositionProperty } from "csstype";
  */
 export function useStickyish(
   ref: React.MutableRefObject<HTMLElement>
-): [number, PositionProperty] {
+): { top: number; position: PositionProperty } {
   const lastScrollY = useRef<number>(0);
   const [top, setTop] = useState<number>(0);
   const [position, setPosition] = useState<PositionProperty>("fixed");
@@ -42,5 +42,5 @@ export function useStickyish(
       window.removeEventListener("scroll", listener);
     };
   }, [top, position, ref]);
-  return [position === "fixed" ? 0 : top, position];
+  return { top: position === "fixed" ? 0 : top, position };
 }

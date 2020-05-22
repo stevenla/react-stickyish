@@ -5,7 +5,7 @@ import range from "lodash/range";
 
 function App() {
   const ref = useRef();
-  const [top, position] = useStickyish(ref);
+  const { top, position } = useStickyish(ref);
   return (
     <div>
       <nav
