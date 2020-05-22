@@ -33,3 +33,7 @@ function Navbar() {
   );
 }
 ```
+
+[npm-url]: https://www.npmjs.com/package/react-stickyish
+[npm-badge]: https://img.shields.io/npm/v/react-stickyish.svg
+[size-badge]: https://img.shields.io/bundlephobia/minzip/react-stickyish.svg
