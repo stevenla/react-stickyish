@@ -4,7 +4,8 @@
   "description": "React hook for a sticky header that re-appears on scroll up",
   "scripts": {
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "dev": "microbundle watch",
+    "gh-pages": "gh-pages -d example/build/ -b gh-pages"
   },
   "keywords": [
     "react"
@@ -13,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^16.9.35",
+    "gh-pages": "^2.2.0",
     "microbundle": "^0.12.0",
     "prettier": "^2.0.5",
     "react": "^16.8.0",
