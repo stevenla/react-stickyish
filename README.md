@@ -6,6 +6,8 @@
 React Hook that allows for headers to be stickyish, so they disappear when
 scrolling down but reappear when scrolling up.
 
+Check out the [demo](https://stevenla.github.io/react-stickyish/)!
+
 ## Install
 
 ```

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
-    "gh-pages": "gh-pages -d example/build/ -b gh-pages"
+    "gh-pages": "(cd example; npm run build); gh-pages -d example/build/ -b gh-pages"
   },
   "keywords": [
     "react"
