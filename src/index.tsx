@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { PositionProperty } from "csstype";
+import { Properties } from "csstype";
 
 /**
  * Used to make navbars sticky-ish, where they will disappear when scrolling
@@ -8,10 +8,10 @@ import { PositionProperty } from "csstype";
  */
 export function useStickyish(
   ref: React.MutableRefObject<HTMLElement>
-): { top: number; position: PositionProperty } {
+): { top: number; position: Properties["position"] } {
   const lastScrollY = useRef<number>(0);
   const [top, setTop] = useState<number>(0);
-  const [position, setPosition] = useState<PositionProperty>("fixed");
+  const [position, setPosition] = useState<Properties["position"]>("fixed");
   useEffect(() => {
     function listener() {
       const refEl = ref.current;

@@ -1,6 +1,6 @@
 {
   "name": "react-stickyish",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React hook for a sticky header that re-appears on scroll up",
   "scripts": {
     "build": "microbundle",
@@ -14,17 +14,17 @@
   "author": "Steven La <mrstevenla@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^16.9.35",
-    "gh-pages": "^2.2.0",
-    "microbundle": "^0.12.0",
-    "prettier": "^2.0.5",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-scripts": "3.4.1",
-    "typescript": "^3.9.3"
+    "@types/react": "^16.9.48",
+    "gh-pages": "^3.1.0",
+    "microbundle": "^0.12.3",
+    "prettier": "^2.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.13.1"
   },
   "source": "src/index.tsx",
   "main": "dist/index.js",
